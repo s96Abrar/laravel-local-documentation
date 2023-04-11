@@ -135,7 +135,7 @@
         document.documentElement.scrollTop = 0;
 
         setTimeout(() => {
-          document.getElementById('content').innerHTML = marked(
+          document.getElementById('content').innerHTML = marked.parse(
             PageData
               .replace(/{note}/g, '**[NOTE]**')
               .replace(/{tip}/g, '**[TIP]**')

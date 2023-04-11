@@ -1,0 +1,10 @@
+#!/bin/bash
+LD_BASE_DIRECTORY=.
+if nc -z 127.0.0.1 8888; then
+	xdg-open http://localhost:8888
+else
+	cd $LD_BASE_DIRECTORY && 
+	xdg-open http://localhost:8888 && 
+	nohup php -S 127.0.0.1:8888
+fi
+

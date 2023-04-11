@@ -18,6 +18,8 @@ laravel-document-update() {
 }
 ```
 
+or, write ```php update.php```
+
 With this update i can which files has been changed in documentation and to see file contents cd into docs folder and run `git diff HEAD@{1}`.
 
 If you want to run in browser, you will need a html server or use php built-in http server like me :) (Or whatever you want, just need to serve a single html file)
@@ -39,6 +41,8 @@ laravel-doc() {
 ```
 
 After adding `laravel-doc` function to `.bashrc` file you may write laravel-doc to terminal and it will open browser tab.
+
+or, write ```./laravelDoc```
 
 Here is the screenshot.
 
